@@ -42,11 +42,16 @@ for city in cities:
         c,
         event_start=START_DATE,
         event_name=flag(city["u"]) + " " + city["n"],
-        event_description=f"""{city["s"]}""",
+        event_description=f"""{city["n"]} welcomes you !
+
+{city["video"]}
+
+{city["s"]}
+    """,
     )
 
     START_DATE += timedelta(2)
 
 c.events
-with open("sample_file.ics", "w") as my_file:
+with open("my.ics", "w") as my_file:
     my_file.writelines(c)
