@@ -1,4 +1,10 @@
 # everydayvirtualvacation
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.5708669.svg
+  :alt: Zenodo 
+  :target: https://doi.org/10.5281/zenodo.5708669
+
+
 An iCal file to transport you to a new place every day until you die
 
 ![image](https://user-images.githubusercontent.com/7908073/139565345-8d34a9dc-25c9-45c5-9225-d6874d94e639.png)
