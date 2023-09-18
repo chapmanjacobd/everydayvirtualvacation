@@ -9,11 +9,13 @@ c = Calendar()
 
 
 def add_allday_event(c, event_start, event_name, event_description):
-    e = Event()
-    e.name = event_name
-    e.description = event_description
-    e.begin = event_start.isoformat()
-    e.end = (event_start + timedelta(days=1)).isoformat()
+    e = Event(
+        event_name,
+        description=event_description,
+        begin=event_start.isoformat(),
+        end=(event_start + timedelta(days=1)).isoformat(),
+        transparent=True,
+    )
     e.make_all_day()
     c.events.add(e)
 
